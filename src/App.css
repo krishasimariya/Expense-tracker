@@ -1,0 +1,150 @@
+/* ---------- Main Page ---------- */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #15161d;
+    color: white;
+}
+
+
+/* ---------- Main Container ---------- */
+
+#root {
+    display: flex;
+    justify-content: center;
+}
+
+#root > div {
+    width: 600px;
+    margin-top: 50px;
+    padding: 30px;
+}
+
+
+/* ---------- Heading ---------- */
+
+h1 {
+    text-align: center;
+    font-size: 52px;
+    margin-bottom: 35px;
+}
+
+
+/* ---------- Expense Form ---------- */
+
+.expense-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+/* ---------- Inputs ---------- */
+
+.expense-form input {
+    width: 230px;
+    padding: 12px;
+    font-size: 18px;
+    border: 1px solid #777;
+    border-radius: 6px;
+    background-color: #dce1f6;
+    color: rgb(22, 18, 18);
+    outline: none;
+    box-sizing: border-box;
+}
+
+.expense-form input:focus {
+    border-color: #8da9c4;
+}
+
+.expense-form input::placeholder {
+    color: #130a0a;
+}
+
+
+/* ---------- Add Button ---------- */
+
+.expense-form button {
+    padding: 10px 18px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #7ceb8e;
+    color: rgb(19, 12, 12);
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.expense-form button:hover {
+    background-color: #999;
+}
+
+
+/* ---------- Total ---------- */
+
+.Total {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: #dcdfe2;
+}
+
+
+/* ---------- Expense List ---------- */
+
+.expense-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+/* ---------- Expense Item ---------- */
+
+.expense-Item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 12px 16px;
+
+    background-color: #2c2f48;
+    border-radius: 8px;
+
+    font-size: 20px;
+}
+
+
+/* ---------- Delete Button ---------- */
+
+.expense-Item button {
+    padding: 7px 14px;
+    margin-left: 15px;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: #c94343;
+    color: rgb(233, 223, 223);
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.expense-Item button:hover {
+    background-color: #b94a48;
+}
+
+
+/* ---------- No Expense ---------- */
+
+.no-expense {
+    text-align: center;
+    color: #aaa;
+    font-size: 20px;
+}
