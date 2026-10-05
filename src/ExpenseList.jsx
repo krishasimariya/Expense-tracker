@@ -1,7 +1,7 @@
-import { useState } from "react";
+
 import ExpenseItem from "./ExpenseItem";
 
-export default function ExpenseList({expenses, onDelete}) {
+export default function ExpenseList({expenses, onDelete, onUpdate}) {
 
     if (expenses.length === 0) {
           return (<p className="no-expense">NO more expenses</p>)  
@@ -9,7 +9,10 @@ export default function ExpenseList({expenses, onDelete}) {
 
     return(<div className="expense-list">
         {expenses.map((item) => (
-            <ExpenseItem key={item.id} Item={item} Delete = {onDelete}/>//Delete and Item che e prop che 
+            <ExpenseItem key={item.id} 
+            Item ={item} 
+            Delete = {onDelete}
+            Update = {onUpdate}/>//Delete and Item che e prop che 
         ))}
     </div>
     );
